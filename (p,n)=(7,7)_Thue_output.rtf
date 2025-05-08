@@ -1,0 +1,182 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \
+                  GP/PARI CALCULATOR Version 2.15.4 (released)\
+         arm64 running darwin (aarch64/GMP-6.2.1 kernel) 64-bit version\
+    compiled: Jun 29 2023, Apple clang version 14.0.3 (clang-1403.0.22.14.1)\
+                            threading engine: single\
+                 (readline v8.1 enabled, extended help enabled)\
+\
+                     Copyright (C) 2000-2022 The PARI Group\
+\
+PARI/GP is free software, covered by the GNU General Public License, and comes \
+WITHOUT ANY WARRANTY WHATSOEVER.\
+\
+Type ? for help, \\q to quit.\
+Type ?18 for how to get moral (and possibly technical) support.\
+\
+parisize = 8000000, primelimit = 500000\
+? default(parisize,13*10^9)\
+  ***   Warning: new stack size = 13000000000 (12397.766 Mbytes).\
+? st=getwalltime();\
+? a1=1;\
+? a2=-49;\
+? a3=-147;\
+? a4=1715;\
+? a5=1715;\
+? a6=-7203;\
+? a7=-2401;\
+? a8=2401;\
+? P=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? tnf=thueinit(P);\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=21 (ms)\
+? soln=thue(tnf,2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =24 (ms)\
+? print("solutions=",soln);\
+solutions=[[2, 0]]\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=24 (ms)\
+? soln2=thue(tnf,-2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =26 (ms)\
+? print("solutions=",soln2);\
+solutions=[[-2, 0]]\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? a1=-3;\
+? a2=-49;\
+? a3=441;\
+? a4=1715;\
+? a5=-5145;\
+? a6=-7203;\
+? a7=7203;\
+? a8=2401;\
+? P=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? tnf=thueinit(P);\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=26 (ms)\
+? soln=thue(tnf,2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =47 (ms)\
+? print("solutions=",soln);\
+solutions=[]\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=47 (ms)\
+? soln2=thue(tnf,-2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =64 (ms)\
+? print("solutions=",soln2);\
+solutions=[]\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? a1=-5;\
+? a2=49;\
+? a3=735;\
+? a4=-1715;\
+? a5=-8575;\
+? a6=7203;\
+? a7=12005;\
+? a8=-2401;\
+? P=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? tnf=thueinit(P);\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=26 (ms)\
+? soln=thue(tnf,2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =47 (ms)\
+? print("solutions=",soln);\
+solutions=[]\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=47 (ms)\
+? soln2=thue(tnf,-2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =64 (ms)\
+? print("solutions=",soln2);\
+solutions=[]\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? a1=1;\
+? a2=147;\
+? a3=-147;\
+? a4=-5145;\
+? a5=1715;\
+? a6=21609;\
+? a7=-2401;\
+? a8=-7203;\
+? P=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? tnf=thueinit(P);\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=25 (ms)\
+? soln=thue(tnf,2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =29 (ms)\
+? print("solutions=",soln);\
+solutions=[[2, 0]]\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=29 (ms)\
+? soln2=thue(tnf,-2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =32 (ms)\
+? print("solutions=",soln2);\
+solutions=[[-2, 0]]\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? a1=11;\
+? a2=49;\
+? a3=-1617;\
+? a4=-1715;\
+? a5=18865;\
+? a6=7203;\
+? a7=-26411;\
+? a8=-2401;\
+? P=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? tnf=thueinit(P);\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=27 (ms)\
+? soln=thue(tnf,2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =47 (ms)\
+? print("solutions=",soln);\
+solutions=[]\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=47 (ms)\
+? soln2=thue(tnf,-2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =64 (ms)\
+? print("solutions=",soln2);\
+solutions=[]\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? a1=9;\
+? a2=-245;\
+? a3=-1323;\
+? a4=8575;\
+? a5=15435;\
+? a6=-36015;\
+? a7=-21609;\
+? a8=12005;\
+? P=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? tnf=thueinit(P);\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=25 (ms)\
+? soln=thue(tnf,2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =72 (ms)\
+? print("solutions=",soln);\
+solutions=[]\
+? print("time taken for thueinit()=",(getwalltime()-st)," (ms)");\
+time taken for thueinit()=73 (ms)\
+? soln2=thue(tnf,-2^7);\
+? print("total time taken =",(getwalltime()-st)," (ms)");\
+total time taken =110 (ms)\
+? print("solutions=",soln2);\
+solutions=[]\
+? \
+}

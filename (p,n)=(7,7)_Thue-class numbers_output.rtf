@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \
+                  GP/PARI CALCULATOR Version 2.13.1 (released)\
+          i386 running darwin (x86-64/GMP-6.0.0 kernel) 64-bit version\
+      compiled: Jan 25 2021, Apple LLVM version 6.0 (based on LLVM 3.5svn)\
+                           threading engine: pthread\
+                 (readline v8.0 enabled, extended help enabled)\
+\
+                     Copyright (C) 2000-2020 The PARI Group\
+\
+PARI/GP is free software, covered by the GNU General Public License, and comes \
+WITHOUT ANY WARRANTY WHATSOEVER.\
+\
+Type ? for help, \\q to quit.\
+Type ?17 for how to get moral (and possibly technical) support.\
+\
+parisize = 8000000, primelimit = 500000, nbthreads = 4\
+? default(parisize,13*10^9)\
+  ***   Warning: new stack size = 13000000000 (12397.766 Mbytes).\
+? a1=1;\
+? a2=-49;\
+? a3=-147;\
+? a4=1715;\
+? a5=1715;\
+? a6=-7203;\
+? a7=-2401;\
+? a8=2401;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+? K.no\
+%11 = 1\
+? default(parisize,13*10^9)\
+? a1=-3;\
+? a2=-49;\
+? a3=441;\
+? a4=1715;\
+? a5=-5145;\
+? a6=-7203;\
+? a7=7203;\
+? a8=2401;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%23 = 1\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? a1=-5;\
+? a2=49;\
+? a3=735;\
+? a4=-1715;\
+? a5=-8575;\
+? a6=7203;\
+? a7=12005;\
+? a8=-2401;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%36 = 1\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? a1=1;\
+? a2=147;\
+? a3=-147;\
+? a4=-5145;\
+? a5=1715;\
+? a6=21609;\
+? a7=-2401;\
+? a8=-7203;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+? K.no\
+%49 = 1\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? st=getwalltime();\
+? a1=11;\
+? a2=49;\
+? a3=-1617;\
+? a4=-1715;\
+? a5=18865;\
+? a6=7203;\
+? a7=-26411;\
+? a8=-2401;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%63 = 1\
+? default(parisize,13*10^9)\
+? st=getwalltime();\
+? st=getwalltime();\
+? a1=9;\
+? a2=-245;\
+? a3=-1323;\
+? a4=8575;\
+? a5=15435;\
+? a6=-36015;\
+? a7=-21609;\
+? a8=12005;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%77 = 1\
+? \
+}

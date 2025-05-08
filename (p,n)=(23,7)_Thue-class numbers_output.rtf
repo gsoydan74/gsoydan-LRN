@@ -1,0 +1,113 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \
+\
+                  GP/PARI CALCULATOR Version 2.15.4 (released)\
+         arm64 running darwin (aarch64/GMP-6.2.1 kernel) 64-bit version\
+    compiled: Jun 29 2023, Apple clang version 14.0.3 (clang-1403.0.22.14.1)\
+                            threading engine: single\
+                 (readline v8.1 enabled, extended help enabled)\
+\
+                     Copyright (C) 2000-2022 The PARI Group\
+\
+PARI/GP is free software, covered by the GNU General Public License, and comes \
+WITHOUT ANY WARRANTY WHATSOEVER.\
+\
+Type ? for help, \\q to quit.\
+Type ?18 for how to get moral (and possibly technical) support.\
+\
+parisize = 8000000, primelimit = 500000\
+? default(parisize,13*10^9)\
+  ***   Warning: new stack size = 13000000000 (12397.766 Mbytes).\
+? a1=-7;\
+? a2=-483;\
+? a3=3381;\
+? a4=55545;\
+? a5=-129605;\
+? a6=-766521;\
+? a7=596183;\
+? a8=839523;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%11 = 1\
+? default(parisize,13*10^9)\
+? a1=-79;\
+? a2=3381;\
+? a3=38157;\
+? a4=-388815;\
+? a5=-1462685;\
+? a6=5365647;\
+? a7=6728351;\
+? a8=-5876661;\
+? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%23 = 1\
+? default(parisize,13*10^9)\
+? a1=1001;\
+? a2=7245;\
+? a3=-483483;\
+? a4=-833175;\
+? a5=18533515;\
+? a6=11497815;\
+? a7=-85254169;\
+? a8=-12592845;? P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5*t^3+a6*t^2+a7*t+a8;\
+  ***   syntax error, unexpected invalid token, expecting end of file: \
+  ***   a8=-12592845;?P=a1*t^7+a2*t^6+a3*t^5+a4*t^4+a5\
+  ***                ^---------------------------------\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%33 = 1\
+? default(parisize,13*10^9)\
+? a1=-1951;\
+? a2=-267099;\
+? a3=942333;\
+? a4=30716385;\
+? a5=-36122765;\
+? a6=-423886113;\
+? a7=166164719;\
+? a8=464256219;\
+? f=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%45 = 1\
+? default(parisize,13*10^9)\
+? a1=-50407;\
+? a2=1406013;\
+? a3=24346581;\
+? a4=-161691495;\
+? a5=-933285605;\
+? a6=2231342631;\
+? a7=4293113783;\
+? a8=-2443851453;\
+? f=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%57 = 1\
+? default(parisize,13*10^9)\
+? a1=477713;\
+? a2=7252245;\
+? a3=-230735379;\
+? a4=-834008175;\
+? a5=8844856195;\
+? a6=11509312815;\
+? a7=-40686338497;\
+? a8=-12605437845;\
+? P=a1*x^7+a2*x^6+a3*x^5+a4*x^4+a5*x^3+a6*x^2+a7*x+a8;\
+? K=bnfinit(P,1);\
+  *** bnfinit: Warning: nonmonic polynomial in bnfinit, using polredbest.\
+? K.no\
+%69 = 1\
+? \
+}
