@@ -1,0 +1,40 @@
+N :=;
+mu:= N;
+for k in [1..#PrimeDivisors(N)] do
+    mu *:= 1+1/PrimeDivisors(N)[k];
+    end for;
+
+M := ModularForms(Gamma0(N),2);
+S := CuspidalSubspace(M);
+nS:= NumberOfNewformClasses(S);
+
+for i in [1..nS] do  
+        newform:=Newform(S,i);
+        NormsDivisors := [ ];
+        for l in [x: x in [1..Floor(mu/6)] | IsPrime(x) and
+            GCD(N, x) eq 1 ] do cl := Coefficient(newform, l);
+            normProduct := Norm(cl-l-1) * Norm(cl+l+1);
+            if Degree(newform) ne 1 then
+                normProduct *:= l;
+                end if;
+
+            for r in [-Floor(Sqrt(l))..Floor(Sqrt(l))] do
+                normProduct *:= Norm(cl - 2*r);
+                end for;
+            if normProduct ne 0 then
+                Pl := PrimeDivisors(Integers() ! normProduct);
+                Append(~NormsDivisors, Pl);
+                end if;
+            end for;
+
+        if not IsEmpty(NormsDivisors) then
+            Pf := Set(NormsDivisors[1]) diff {2, 3, 5};
+            for k in [2..#NormsDivisors] do
+                Pf meet:= Set(NormsDivisors[k]);
+                end for;
+            "Newform ", newform, " is eliminable for primes > 5 different from", Pf;
+
+        else
+            "Newform ", newform, "cannot be eliminated";
+            end if;
+    end for;

@@ -1,0 +1,709 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25500\viewh10860\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Fri Jun 28 08:44:46 on console\
+/Users/gokhan/Desktop/Magma ; exit;\
+\
+The default interactive shell is now zsh.\
+To update your account to use zsh, please run `chsh -s /bin/zsh`.\
+For more details, please visit https://support.apple.com/kb/HT208050.\
+GOKHAN-iMac:~ gokhan$ /Users/gokhan/Desktop/Magma ; exit;\
+Magma V2.24-5     Fri Jun 28 2024 16:26:38 on GOKHAN-iMac [Seed = 4125960599]\
+Type ? for help.  Type <Ctrl>-D to quit.\
+> load "solveThueMahler.m";\
+Loading "solveThueMahler.m"\
+Loading "./multGroup.m"\
+Loading "./equationsInK.m"\
+Loading "./reducedBound.m"\
+Loading "./sieveInfo.m"\
+Loading "./sift.m"\
+Loading "./solutionVectors.m"\
+Loading "./parseIO.m"\
+> alist:=[1,-105,-651,16275,33635,-302715,-208537,446865];\
+> a:=2^13;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 1, -105, -651, 16275, 33635, -302715, -208537, 446865 ]; a:=8192; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.610\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 2.890\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1350.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 11.540\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [18, 25, 12, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1351.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 16.510\
+> sols;\
+\{\}\
+> alist:=[1,-105,-651,16275,33635,-302715,-208537,446865];\
+> a:=-2^13;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 1, -105, -651, 16275, 33635, -302715, -208537, 446865 ]; a:=-8192; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.550\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 2.720\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1350.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 11.470\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [18, 25, 12, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1351.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.020\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 16.220\
+> sols;\
+\{\}\
+> alist:=[-15,679,9765,-105245,-504525,1957557,3128055,-2889727];\
+> a:=2^19;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ -15, 679, 9765, -105245, -504525, 1957557, 3128055, -2889727 ]; a:=524288; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.580\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.610\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 2166.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 13.140\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [5, 22, 19, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1015.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 18.840\
+> sols;\
+\{\}\
+> alist:=[-15,679,9765,-105245,-504525,1957557,3128055,-2889727];\
+> a:=-2^19;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ -15, 679, 9765, -105245, -504525, 1957557, 3128055, -2889727 ]; a:=-524288; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.570\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.820\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 2166.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 12.920\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [5, 22, 19, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1015.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.020\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 18.830\
+> sols;\
+\{\}\
+> alist:=[161,-3465,-104811,537075,5415235,-9989595,-33574457,14746545];\
+> a:=2^25;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 161, -3465, -104811, 537075, 5415235, -9989595, -33574457, 14746545 ]; a:=33554432; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.570\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.820\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 600.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 12.760\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [10, 20, 9, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1177.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.050\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 18.710\
+> sols;\
+\{\
+    [ -1, 1, 0 ],\
+    [ -31, -1, 3 ]\
+\}\
+> alist:=[161,-3465,-104811,537075,5415235,-9989595,-33574457,14746545];\
+> a:=-2^25;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 161, -3465, -104811, 537075, 5415235, -9989595, -33574457, 14746545 ]; a:=-33554432; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.590\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.890\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 600.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.010\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 12.930\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [10, 20, 9, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1177.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.050\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 19.010\
+> sols;\
+\{\
+    [ 1, -1, 0 ],\
+    [ 31, 1, 3 ]\
+\}\
+> alist:=[-1455,8519,947205,-1320445,-48938925,24560277,303421335,-36255647];\
+> a:=2^31;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ -1455, 8519, 947205, -1320445, -48938925, 24560277, 303421335, -36255647 ]; a:=2147483648; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.630\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.660\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1350.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 19.110\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [15, 17, 28, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 2647.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.020\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 24.900\
+> sols;\
+\{\}\
+> alist:=[-1455,8519,947205,-1320445,-48938925,24560277,303421335,-36255647];\
+> a:=-2^31;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ -1455, 8519, 947205, -1320445, -48938925, 24560277, 303421335, -36255647 ]; a:=-2147483648; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.620\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.670\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1350.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 18.880\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [15, 17, 28, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 2647.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.020\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 24.660\
+> sols;\
+\{\}\
+> alist:=[11521,93975,-7500171,-14566125,387508835,270929925,-2402554777,-399944175];\
+> a:=2^37;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 11521, 93975, -7500171, -14566125, 387508835, 270929925, -2402554777, -399944175 ]; a:=137438953472; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.700\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.350\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1536.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 13.350\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [5, 11, 29, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 4375.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.020\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 19.000\
+> sols;\
+\{\}\
+> alist:=[11521,93975,-7500171,-14566125,387508835,270929925,-2402554777,-399944175];\
+> a:=-2^37;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 11521, 93975, -7500171, -14566125, 387508835, 270929925, -2402554777, -399944175 ]; a:=-137438953472; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.680\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.290\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1536.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 13.210\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [5, 11, 29, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 4375.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.020\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 18.760\
+> sols;\
+\{\}\
+> alist:=[-79695,-1954841,51881445,303000355,-2680541325,-5635806603,16619356215,8319524033];\
+> a:=2^43;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ -79695, -1954841, 51881445, 303000355, -2680541325, -5635806603, 16619356215, 8319524033 ]; a:=8796093022208; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.640\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.630\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1944.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 13.190\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [28, 29, 26, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1735.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.030\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 19.030\
+> sols;\
+\{\
+    [ 15, 1, 0 ]\
+\}\
+> alist:=[-79695,-1954841,51881445,303000355,-2680541325,-5635806603,16619356215,8319524033];\
+> a:=-2^43;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ -79695, -1954841, 51881445, 303000355, -2680541325, -5635806603, 16619356215, 8319524033 ]; a:=-8796093022208; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.670\
+We have 2 S-unit equations to solve.\
+The ranks are [ 6, 7 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 3.770\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 1944.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 13.110\
+S is  [\
+    Prime Ideal\
+    Two element generators:\
+        [31, 0, 0, 0, 0, 0, 0]\
+        [28, 29, 26, 0, 0, 0, 0]\
+]\
+The range is [ <0, 1> ].\
+The bound on the norm squared of (b1,..,br) is 1735.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.030\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 19.110\
+> sols;\
+\{\
+    [ -15, -1, 0 ]\
+\}\
+\
+\
+\
+\
+> alist:=[7,0,-1085,0,20181,0,-29791];\
+> a:=2^6;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 7, 0, -1085, 0, 20181, 0, -29791 ]; a:=64; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.210\
+We have 2 S-unit equations to solve.\
+The ranks are [ 5, 5 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 2.030\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 14580.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 1.750\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 4805.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 5.590\
+> sols;\
+\{\}\
+> alist:=[7,0,-1085,0,20181,0,-29791];\
+> a:=-2^6;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 7, 0, -1085, 0, 20181, 0, -29791 ]; a:=-64; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.190\
+We have 2 S-unit equations to solve.\
+The ranks are [ 5, 5 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+sols;\
+\
+Time: 1.700\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 13005.\
+Applying the Dirichlet sieve to equation number 1 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 2...\
+Time: 1.950\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 5445.\
+Applying the Dirichlet sieve to equation number 2 out of 2.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 2.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 5.430\
+> sols;\
+\{\}\
+> \
+\
+\
+\
+\
+=================================================\
+\
+The sextic Thue-Mahler Equations  (the case j=0)\
+==================================================\
+\
+\
+\
+Last login: Fri Apr 25 11:16:01 on ttys001\
+\
+The default interactive shell is now zsh.\
+To update your account to use zsh, please run `chsh -s /bin/zsh`.\
+For more details, please visit https://support.apple.com/kb/HT208050.\
+/Users/gokhan/Desktop/Magma-IM ; exit;\
+GOKHAN-iMac:~ gokhan$ /Users/gokhan/Desktop/Magma-IM ; exit;\
+Magma V2.24-5     Fri Apr 25 2025 11:23:25 on GOKHAN-iMac [Seed = 995628327]\
+Type ? for help.  Type <Ctrl>-D to quit.\
+> load "solveThueMahler.m";\
+Loading "solveThueMahler.m"\
+Loading "./multGroup.m"\
+Loading "./equationsInK.m"\
+Loading "./reducedBound.m"\
+Loading "./sieveInfo.m"\
+Loading "./sift.m"\
+Loading "./solutionVectors.m"\
+Loading "./parseIO.m"\
+> alist:=[2047221931442176,0,-338580996096,0,4444160,0,-7];\
+> a:=1;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 2047221931442176, 0, -338580996096, 0, 4444160, 0, -7 ]; a:=1; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.360\
+We have 1 S-unit equation to solve.\
+The rank is [ 5 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 2.410\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 13520.\
+Applying the Dirichlet sieve to equation number 1 out of 1.\
+Time: 0.010\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 4.330\
+> sols;\
+\{\}\
+> alist:=[2047221931442176,0,-338580996096,0,4444160,0,-7];\
+> a:=-1;\
+> primelist:=[31];\
+> time sols:=solveThueMahler(alist,a,primelist);\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+alist:=[ 2047221931442176, 0, -338580996096, 0, 4444160, 0, -7 ]; a:=-1; primelist:=[ 31 ]; \
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 0.320\
+We have 1 S-unit equation to solve.\
+The rank is [ 5 ].\
+Getting the small sieve information...Done.\
+++++++++++++++++++++++++++++++++++\
+Working on equation number 1...\
+Time: 2.400\
+S is  []\
+The range is [].\
+The bound on the norm squared of (b1,..,br) is 9680.\
+Applying the Dirichlet sieve to equation number 1 out of 1.\
+Time: 0.000\
+Finished applying the Dirichlet sieve to equation number 1.\
+Time: 0.000\
+++++++++++++++++++++++++++++++++++\
+Done solving the Thue-Mahler equation.\
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\
+Time: 4.290\
+> sols;\
+\{\}\
+> \
+\
+\
+\
+\
+}

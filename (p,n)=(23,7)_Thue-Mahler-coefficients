@@ -1,0 +1,58 @@
+alist:=[3,-49,-1449,5635,55545,-77763,-255507,85169];
+a:=2^13;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+
+alist:=[-21,-553,10143,63595,-388815,-877611,1788549,961193];
+a:=2^19;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+alist:=[-45,7007,21735,-805805,-833175,11120109,3832605,-12179167];
+a:=-2^25;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+alist:=[1659,-13657,-801297,1570555,30716385,-21673659, -141295371,23737817];
+a:=2^31;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+alist:=[-8733,-352849,4218039,40577635,-161691495,-559971363,743780877,613301969];
+a:=2^37;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+alist:=[-45045,3343991,21756735,-384558965,-834008175,5306913717,3836437605,-5812334071];
+a:=2^43;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+
+==========================================
+Sextic Thue-Mahler equation 
+=============================
+ 
+
+
+alist:=[836109873446912,0,-186378092544,0,3297280,0,-7];
+a:=1;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+
+alist:=[836109873446912,0,-186378092544,0,3297280,0,-7];
+a:=-1;
+primelist:=[23];
+time sols:=solveThueMahler(alist,a,primelist);
+sols;
+
+
